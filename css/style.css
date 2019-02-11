@@ -17,6 +17,10 @@ li {
   width: 100%;
 }
 
+.pb0{
+  padding-bottom: 0!important; 
+}
+
 .wrapinner {
   width: 80%;
   margin: 0 auto;
@@ -83,6 +87,10 @@ li {
   letter-spacing: 3px;
   font-size: 60px;
   opacity: 0.8;
+}
+
+#key-text{
+  display: none;
 }
 
 .message {
@@ -231,6 +239,7 @@ li {
 
 .fnavArea ul a {
   color: #333;
+  font-family: futura;
   font-size: 16px;
 }
 
@@ -373,11 +382,10 @@ footer p {
 .fadein {
   opacity: 0;
   transform: translate(0, 50px);
-  transition: all 2000ms;
+  transition: all 2500ms;
 }
 
 .fadein.scrollin {
   opacity: 1;
   transform: translate(0, 0);
 }
-
