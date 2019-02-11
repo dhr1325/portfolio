@@ -97,7 +97,7 @@ li {
   background: #232830;
   color: #fff;
   text-align: center;
-  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
 }
 
 .message .message-text {
@@ -153,7 +153,7 @@ li {
   margin: 0 auto;
   line-height: 2;
   font-size: 16px;
-  font-family: 'klee',sans-serif;
+  font-family: 'klee','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   font-weight: bold;
 }
 
@@ -195,7 +195,7 @@ li {
 
 .service .service-list .serviceitem .service-text {
   font-size: 16px;
-  font-family: 'klee',sans-serif;
+  font-family: 'klee','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   font-weight: bold;
 }
 
@@ -205,7 +205,7 @@ li {
 
 .contact .contact-list {
   padding: 80px 0;
-  font-family: 'klee',sans-serif;
+  font-family: 'klee','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   font-weight: bold;
 }
 
