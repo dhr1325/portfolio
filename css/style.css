@@ -64,7 +64,7 @@ li {
 }
 
 .keyvisual {
-  height: 800px;
+  height: 100vh;
   position: relative;
   color: #fff;
 }
@@ -80,13 +80,15 @@ li {
 }
 
 .keyvisual h1 {
-  padding: 335px 0;
-  text-align: center;
+	text-align: center;
   font-family: futura;
   font-weight: normal;
   letter-spacing: 3px;
   font-size: 60px;
   opacity: 0.8;
+  position:absolute;
+  top:40%;
+  left:37%;
 }
 
 #key-text{
