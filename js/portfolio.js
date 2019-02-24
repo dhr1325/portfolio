@@ -15,12 +15,12 @@ $(function(){
 
 	$('.keyvisual').vegas({ //背景画像でスライドショーしたい場所の設定
     slides: [
-    { src: 'images/key01.jpg' },
     { src: 'images/key02.jpg' },
+    { src: 'images/key01.jpg' },
     { src: 'images/key03.jpg' },
     { src: 'images/key04.jpg' },
-     { src: 'images/season2.jpg' }, //スライドする画像を配列で設定
-     { src: 'images/season3.jpg' }
+     { src: 'images/key05.jpg' }, //スライドする画像を配列で設定
+     { src: 'images/key06.jpg' }
     ],
      delay: 5000, //スライドまでの時間ををミリ秒単位で設定
      timer: true, //タイマーバーの表示/非表示を切り替え
