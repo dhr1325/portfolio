@@ -24,10 +24,10 @@ a{text-decoration: none;}
 /* body setting
 -------------------------------------*/
 body{
-	font-family: "Montserrat",'TsukuARdGothic-Regular',sans-serif;
 	font-size:75%;
 	text-align:left;
 	line-height:1;
+	font-family:Montserrat,FOT-TsukuARdGothic Std,sans-serif;
 }
 
 html:not(:target) body{
@@ -226,6 +226,8 @@ html:not(:target) body{
 	position: absolute;
 	top:50%;
 	left:50%;
+	width: 100%;
+	text-align: center;
 	transform: translateY(-50%) translateX(-50%);
 	font-size: 200%;
 	color:#fff;
@@ -233,16 +235,16 @@ html:not(:target) body{
 
 .scroll_down{
   position: absolute;
-  left: 50%;
-  bottom: 20px;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
   color:#fff;
   letter-spacing: 1px;
   z-index: 2;
   padding-top: 70px;
   font-weight: bold;
   transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  display: inline-block;
+  bottom: 20px;
+  left: 50%;
 }
 
 .scroll_down span {
