@@ -82,9 +82,9 @@
 	.skill_list02{
 		display: block;
 	}
-	
+
 	.skill_text{
-	width: 100%;
+	  text-align: left;
 	}
 
 	.contact_btn a{
