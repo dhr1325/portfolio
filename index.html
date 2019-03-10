@@ -2,149 +2,222 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Koki Harada,Portfolio...</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Portfolio of Koki Harada</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/media.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="css/vegas.min.css">
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="js/vegas.min.js"></script>
 <script src="js/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
-<div class="wrap">
-  <!-- ロード画面 -->
-    <div id="loader-bg">
-      <div id="loader">
-        <span class="cp_loading20"><span> </span><span> </span></span>
-      </div>
+<!-- ローディング -->
+<div id="loader-bg">
+    <div id="loader">
+      <span class="cp_loading20"><span> </span><span> </span></span>
     </div>
-  <!-- ロード画面 -->
-  <header>
-  <!-- ヘッダーナビ -->
-    <div class="headernav">
-    	<div class="icon">
-    		<i class="fas fa-times" id="times"></i>
-    	</div>
-    	<div class="wrapinner">
-    		<ul>
-    			<li><a href="#">▷ Top</a></li>
-    			<li><a href="#about">▷ About</a></li>
-    			<li><a href="#service">▷ Service</a></li>
-    			<li><a href="#portfolio">▷ Portfolio</a></li>
-    			<li><a href="#contact">▷ Contact</a></li>
-    		</ul>
-    	</div>
-    </div>
-  <!-- ヘッダーナビ -->
-  </header>
-
-  <!-- ヘッダーキービジュアル -->
-    <div class="keyvisual table" id="keyvisual">
-    	<div class="icon">
-    		<i class="fas fa-bars" id="bar"></i>
-    	</div>
-    		<h1 id="key-text">Koki Harada,<br>Portfolio...</h1>
-    </div>
-  <!-- ヘッダーキービジュアル -->
-
-  <!-- トップメッセージ -->
-    <div class="message" id="message">
-    	<div class="wrapinner">
-    		<div class="message-text fadein">
-    			<p>初めまして、原田 洸希と申します。<br>福岡でWebエンジニア/デザイナーをしています。</p>
-				<p>このサイトのデザイン、コーディングは０から制作しました。<br>まだまだ至らぬところばかりですが、宜しくお願い致します。</p>
-				<p>最後に、人生で出会える人は限られています。<br>「出会いは一瞬、出会えば一生」を信条に、<span></span>継続的なお付き合いができれば幸いです。</p>
-			</div>
-    	</div>
-    </div>
-  <!-- トップメッセージ -->
-
-  <!-- コンテンツエリア -->	
-  <article class="contentArea">
-  	<div class="wrapinner">
-  		<!-- アバウト -->
-  		<section class="about title fadein" id="about">
-  			<h2 class="heading-block">About.</h2>
-  			<div class="about-list fadein">
-  				<div class="about-image"><img src="images/koki.jpg" alt="Koki.Harada" width="300" height="300"></div>
-  				<p>Koki Harada.</p>
-  			</div>
-  			<div class="about-text fadein">
-  				<p>高校卒業後、東京の音楽事務所に所属し、2年間ギタリストとして活動。<br>退所後はプログラミングとデザインを独学し、約3ヶ月で福岡のIT企業に内定を頂く。<br>現在はその会社でWebエンジニア兼デザイナーとして従事。<br>最近は企業のWebマーケティングも担当しています。</p>
-  			</div>
-  		</section>
-  		<!-- アバウト -->
-  		<!-- サービス -->
-  		<section class="service title fadein" id="service">
-  			<h2 class="heading-block">Service.</h2>
-  			<div class="service-list fadein">
-  				<div class="serviceitem">
-  					<h3>Cording</h3>
-  					<p class="code"><i class="fas fa-desktop"></i></p>
-  					<div class="service-text">
-  						<p>ホームページ制作、ランディングページ、コーポレートサイト等、Web制作全般をお客様のご要望に沿って作成致します。レスポンシブ対応やjavascriptで動きを付ける事も可能です。</p>
-  					</div>
-  				</div>
-  				<div class="serviceitem">
-  					<h3>Wordpress</h3>
-  					<p class="wordpress"><i class="fab fa-wordpress"></i></p>
-  					<div class="service-text">
-  						<p>Webサイトの更新が必要な方にはWordPressの導入をご提案しています。また、お問い合わせフォームの設置も可能ですのでぜひご相談下さい。</p>
-  					</div>
-  				</div>
-  				<div class="serviceitem pb0">
-  					<h3>Design</h3>
-  					<p class="design"><i class="fab fa-sketch"></i></p>
-  					<div class="service-text">
-  						<p>ヒアリングに基づいたデザインを作成致します。またUI&UXを意識したデザインが得意です。ぜひお気軽にご相談下さい。</p>
-  					</div>
-  				</div>
-  			</div>
-  		</section>
-  		<!-- サービス -->
-  		<!-- ポートフォリオ -->
-  		<section class="portfolio title fadein" id="portfolio">
-  			<h2 class="heading-block">Portfolio.</h2>
-  			<div class="portfolio-list">
-    		  
-        </div>
-  		</section>
-  		<!-- ポートフォリオ -->
-  		<!-- コンタクト -->
-  		<section class="contact title fadein" id="contact">
-  			<h2 class="heading-block">Contact.</h2>
-  			<div class="contact-list">
-  				<p>Web制作やマーケティングのご依頼、相談等はお気軽にご連絡下さい。<br>24時間以内にご返信致します。</p>
-  				<a href="mailto:dhr1325@gmail.com" target="_blank"><i class="far fa-envelope"></i> <span>dhr1325@gmail.com</span></a>
-  			</div>
-  		</section>
-  		<!-- コンタクト -->
-  	</div>
-  </article>
-  <!-- コンテンツエリア -->
-
-  <!-- フッターナビ -->
-  <div class="fnavArea">
-  	<div class="wrapinner">
-  		<ul>
-  			<li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i><span>Twitter</span></a></li>
-  			<li><a href="https://ja-jp.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
-  			<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-  		</ul>
-  	</div>
-  </div>
-  <!-- フッターナビ -->
-
-  <!-- フッター -->
-  <footer>
-  	<div class="wrapinner">
-  		<p>©︎ dhr works 2018 -</p>
-  	</div>
-  </footer>
-  <!-- フッター -->
 </div>
-<script src="js/portfolio.js"></script>
+<!-- メニュー -->
+<div class="topArea">
+<header>
+    <a class="menu">
+        <span class="menu__line menu__line--top"></span>
+        <span class="menu__line menu__line--center"></span>
+        <span class="menu__line menu__line--bottom"></span>
+    </a>
+</header>
+    <nav class="gnav">
+        <div class="gnav__wrap">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a class="button" href="#sc01">About</a></li>
+                <li class="gnav__menu__item"><a class="button" href="#sc02">Skill</a></li>
+                <li class="gnav__menu__item"><a class="button" href="#sc03">Service</a></li>
+                <li class="gnav__menu__item"><a class="button" href="#sc04">Portfolio</a></li>
+                <li class="gnav__menu__item"><a class="button" href="#sc05">Contact</a></li>
+            </ul>
+        </div><!--gnav-wrap-->
+    </nav>
+    <h1 class="heading_title">Welcome to My Portfolio!!</h1>
+    <a href="#message" class="scroll_down"><span></span>Scroll</a>
+</div>
+<!-- メッセージ -->
+<section class="message" id="message">
+    <div class="message_btn fadein">
+        <h2>MESSAGE</h2>
+    </div>
+    <div class="message_text fadein">
+        <div class="message_wrap">
+            <p>ようこそ！私のポートフォリオサイトへ！<br>このサイトのデザイン、コーディングは０から制作しました。<br>まだまだ至らぬ所ばかりですが宜しくお願いいたします。<br>またこのサイトが少しでも良いと感じてくれれば幸いです。</p>
+            <p class="pb160">最後に人生で出会える人は限られています。<br>その一つ一つの出会いを大切にすれば、<br>きっと素敵な人生になると、私はそう信じています。</p>
+        </div>
+    </div>
+</section>
+<article>
+<!-- アバウト -->
+<section class="about" id="sc01">
+    <div class="wrap">
+        <h2 class="section_title fadein">About.</h2>
+        <div class="about_block">
+            <div class="about_text">
+                <p class="about_text_title fadein">福岡のフロントエンドエンジニア&デザイナー</p>
+                <div class="profile fadein">
+                    <p>Profile<br>原田 洸希 / Koki Harada<br>1994年 神奈川県生まれ 福岡育ち</p>
+                    <div class="profile_detail">
+                        <p>高校卒業後は音楽事務所に所属し、バンド活動を始める。</p><p class="paformance">▶︎実績<br>TVアニメ 『アニメガタリズ』の挿入歌や、『メカウデ』のEDを担当。<br>また、全国のタワーレコードで音源のリリースやインストアライブを行う。</p><p>音楽活動で色々な経験を経たが、前より興味があったプログラミングを学ぶため、<br>活動2年ほどでバンドを脱退。<br>3ヶ月ほどの独学を経て、福岡のWeb制作会社に入社。<br>憧れだったフロントエンドエンジニアになる。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_img fadein">
+                <img src="images/koki.jpg" alt="ハラダ コウキ" width="250" height="250">
+                <p>＼私がハラダ コウキです／</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="skill" id="sc02">
+    <div class="wrap">
+        <div class="section_title fr fadein">
+            <h2>Skill.</h2>
+        </div>
+        <div class="clearfix"></div>
+        <div class="skill_block">
+            <div class="skill_list fadein">
+                <ul>
+                    <li class="w80">HTML5<span class="level"></span></li>
+                    <li class="w70">CSS3 / SCSS<span class="level"></span></li>
+                    <li class="w50">Javascript<span class="level"></span></li>
+                    <li class="w40">PHP<span class="level"></span></li>
+                    <li class="w60">WordPress<span class="level"></span></li>
+                </ul>
+            </div>
+            <div class="skill_text fadein">
+                <p>主にHTML / CSS / Javascriptを用いて<br>お客様のご要望に沿ったWebサイトを制作いたします。<br>また、レスポンシブ対応も可能ですのでお気軽にお声掛けください。</p>
+                <p>その他にもWordPressを用いてのWebサイト制作も可能です。<br>ブログ等の更新が必要な方、自分でサイト管理をしたいという方にオススメの機能です。</p>
+                <p class="contact_btn"><a href="#">ご依頼・ご相談はこちら</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service" id="sc03">
+    <div class="wrap">
+        <h2 class="section_title fadein">Service.</h2>
+        <div class="service_block">
+            <div class="service_list fadein">
+                <div class="coding">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="service_text">
+                    <p>Web制作</p>
+                    <p>LPやコーポレートサイト等、Web制作全般をお客様のご要望に沿って作成致します。また、デザイン対応も可能なのでお気軽にご相談ください。</p>
+                </div>
+            </div>
+            <div class="service_list fadein">
+                <div class="wp">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+                <div class="service_text">
+                    <p>WordPress</p>
+                    <p>上記でもご説明した通り、WordPressを用いてのWeb制作も可能です。具体的には静的サイトを動的に変換する、オリジナルテーマ作成、既存テーマの編集、お問い合わせフォームの実装などが対応できます。</p>
+                </div>
+            </div>
+            <div class="service_list fadein">
+                <div class="seo">
+                    <i class="far fa-chart-bar"></i>
+                </div>
+                <div class="service_text">
+                    <p>SEO</p>
+                    <p>現在本業の方で企業様のWebサイトをGoogleアナリティクスを用いて、マーケティングをする案件も担当しておりますので、ぜひご相談ください。</p>
+                </div>
+            </div>
+        </div>
+        <div class="service_block02">
+        <div class="work fadein">
+            <div class="workInner">
+            <p>制作の流れに関しては下記のボタンから</p>
+            <div class="flow">
+                <a href="#">WorkFlow</a>
+            </div>
+            </div>
+        </div>
+        <div class="price fadein">
+            <p>参考価格</p>
+            <table>
+                <tr>
+                    <th>内容</th>
+                    <th>価格</th>
+                </tr>
+                <tr>
+                    <td>LP制作</td>
+                    <td>30,000円〜</td>
+                </tr>
+                <tr>
+                    <td>コーポレートサイト制作（トップ）</td>
+                    <td>20,000円〜</td>
+                </tr>
+                <tr>
+                    <td>コーポレートサイト制作（下層）</td>
+                    <td>10,000円〜</td>
+                </tr>
+                <tr>
+                    <td>レスポンシブ化</td>
+                    <td>10,000円〜</td>
+                </tr>
+                <tr>
+                    <td>WordPress化</td>
+                    <td>50,000円〜</td>
+                </tr>
+                <tr>
+                    <td>お問い合わせフォーム実装</td>
+                    <td>8,000円〜</td>
+                </tr>
+            </table>
+            <p>※ボリュームによっては金額が変動いたします。<br>不明点はお気軽にご相談ください。</p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio" id="sc04">
+    <div class="wrap">
+        <div class="section_title fr fadein">
+            <h2>Portfolio.</h2>
+        </div>
+        <div class="clearfix"></div>
+        <div class="portfolio_block">
+            <div class="slick fadein">
+                <p>slick導入予定</p>
+            </div>
+            <div class="portfolio_text fadein">
+                <p>過去の制作物になります。<br>制作物の中には模写作品も含まれます。</p>
+                <div class="portfolio_btn">
+                    <a href="#">制作一覧</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="sc05">
+    <div class="wrap">
+        <h2 class="section_title fadein">Contact.</h2>
+        <div class="fadein">
+            <div class="contact_text">
+                <p>Web制作のご依頼やご相談はお気軽にご連絡ください。<br>24時間以内にはご返信いたします。</p>
+            </div>
+            <div class="contact_list">
+                <a href="mailto:dhr1325@gmail.com" target="_blank"><span><i class="far fa-envelope"></i></span>dhr1325@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</section>
+</article>
+<footer>
+    <div class="wrap">
+        <p>©︎ dhrworks 2018-</p>
+    </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
