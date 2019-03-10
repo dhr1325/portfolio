@@ -82,6 +82,10 @@
 	.skill_list02{
 		display: block;
 	}
+	
+	.skill_text{
+	width: 100%;
+	}
 
 	.contact_btn a{
 	display: none;
