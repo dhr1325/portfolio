@@ -32,8 +32,15 @@
 	}
 
     .heading_title{
-    	font-size: 150%;
+      font-size: 150%;
+      font-weight: bold;
     }
+
+    .scroll_down{
+	  left:45%;
+	  transform: translateX(0, -45%);
+	  -webkit-transform: translate(0, -45%);
+	}
 
     .message_btn{
 	font-size: 150%;
@@ -67,24 +74,24 @@
 	}
 
 	#br01{
-	display: none;
+		display: none;
 	}
 
 	.skill_block{
-	display: block;
-	font-size: 100%;
+		display: block;
+		font-size: 100%;
 	}
 
 	.skill_list{
-	display: none;
+		display: none;
 	}
 
 	.skill_list02{
-	display: block;
+		display: block;
 	}
 
 	.skill_text{
-	  text-align: left!important;
+	  text-align: left;
 	}
 
 	.contact_btn a{
@@ -92,7 +99,7 @@
 	}
 
 	#br02{
-	display: block;
+		display: block;
 	}
 
 	.service_block{
@@ -109,7 +116,7 @@
 	}
 
 	.work{
-	display: none;
+		display: none;
 	}
 
 	.work02{
@@ -132,7 +139,7 @@
 	}
 
 	.portfolio_text p{
-	  margin-bottom: 100px;
+		margin-bottom: 100px;
 	}
 
 	.portfolio_btn{
