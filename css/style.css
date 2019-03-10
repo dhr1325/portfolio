@@ -233,16 +233,16 @@ html:not(:target) body{
 
 .scroll_down{
   position: absolute;
-  bottom: 20px;
   left: 50%;
+  bottom: 20px;
   display: inline-block;
-  padding-top: 70px;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
   color:#fff;
-  font-weight: bold;
   letter-spacing: 1px;
   z-index: 2;
+  padding-top: 70px;
+  font-weight: bold;
+  transform: translate(0, -50%);
 }
 
 .scroll_down span {
@@ -360,8 +360,8 @@ header{
 }
 .gnav__menu__item a{
     color: #fff;
-		font-size: 217%;
-		letter-spacing: 1px;
+	font-size: 217%;
+	letter-spacing: 1px;
     text-decoration: none;
     transition: .5s;
 }
@@ -420,6 +420,7 @@ header{
 .message_btn{
 	padding:160px 0 80px;
 	font-size: 200%;
+	letter-spacing: 1px;
 	color:#fff;
 }
 
@@ -454,7 +455,12 @@ header{
 	text-align: center;	
 }
 
-.about_img img{
+.about_img02{
+	text-align: center;
+	display: none;
+}
+
+.about_img img,.about_img02 img{
 	border: 3px double #333;
 	border-radius:50%;
 }
@@ -502,7 +508,7 @@ header{
 	width: 30%;
 }
 
-.skill_list li{
+.skill_list li,.skill_list02 li{
 	position: relative;
 	margin-bottom: 30px;
 	padding-bottom: 20px;
@@ -522,6 +528,10 @@ header{
 	border-radius: 50%;
 }
 
+.skill_list02{
+	display: none;
+}
+
 .skill_text{
 	text-align: right;
 	line-height: 2;
@@ -529,6 +539,10 @@ header{
 
 .skill_text p{
 	margin-bottom: 50px;
+}
+
+#br02{
+		display: none;
 }
 
 .contact_btn a{
@@ -578,7 +592,6 @@ header{
 	color: #fff;
 }
 
-
 .service_text{
 	font-size: 120%;
 }
@@ -609,12 +622,12 @@ header{
 	margin: 190px 0;
 }
 
-.work p{
+.work p,.work02 p{
 	margin-bottom: 30px;
 	font-weight: bold;
 }
 
-.work a{
+.work a,.work02 a{
 	display: inline-block;
 	padding:15px 60px;
 	border:3px double #fff;
@@ -622,10 +635,14 @@ header{
 	transition:all 0.5s;
 }
 
-.work a:hover{
+.work a:hover,.work02 a:hover{
 	background: #fff;
 	color:#333;
 	border:3px double #333;
+}
+
+.work02{
+		display: none;
 }
 
 .price{
@@ -714,7 +731,6 @@ td{
 .contact{
 	width: 100%;
 	padding:90px 0;
-	
 }
 
 .contact_text{
