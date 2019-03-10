@@ -1,0 +1,182 @@
+/* スマホ */
+@media(max-width:600px){
+    .wrap{
+        width: 80%;
+    }
+
+    .section_title{
+	width: 60%;
+	font-size: 150%;
+	}
+
+    .message_wrap{
+    	width: 90%;
+    }
+
+    .menu{
+    right: 20px;
+    top: 20px;
+	}
+
+	.gnav__menu__item a{
+		font-size: 120%;
+	}
+
+	.gnav__menu__item{
+	margin: 30px 0;
+	}
+
+	.button {
+	  width: 200px;
+	  padding: 10px 0;
+	}
+
+    .heading_title{
+    	font-size: 150%;
+    }
+
+    .message_btn{
+	font-size: 150%;
+	}
+
+	.message_text{
+	font-size: 117%;
+	line-height: 1.5;
+	}
+
+	.about_block{
+	display: block;
+	font-size: 100%;
+	}
+
+	.about_img{
+	display: none;
+	}
+
+	.about_img02{
+	display: block;
+	margin-bottom: 30px;
+	}
+
+	.about_text_title{
+		text-align: center;
+	}
+
+	.about_text{
+	width: 100%;
+	}
+
+	#br01{
+		display: none;
+	}
+
+	.skill_block{
+		display: block;
+		font-size: 100%;
+	}
+
+	.skill_list{
+		display: none;
+	}
+
+	.skill_list02{
+		display: block;
+	}
+
+	.skill_text{
+	text-align: right;
+	}
+
+	.contact_btn a{
+	display: none;
+	}
+
+	#br02{
+		display: block;
+	}
+
+	.service_block{
+	display: block;
+	}
+
+	.service_list{
+	width: 100%;
+	margin-bottom: 80px;
+	}
+
+	.service_block02{
+	display: block;
+	}
+
+	.work{
+		display: none;
+	}
+
+	.work02{
+		display: block;
+	}
+
+	.workInner{
+	margin: 100px 0 0;
+	text-align: center;
+	}
+
+	.price{
+	width: 100%;
+	font-size: 100%;
+	}
+
+	.portfolio_block{
+	display: block;
+	font-size: 100%;
+	}
+
+	.portfolio_text p{
+		margin-bottom: 100px;
+	}
+
+	.portfolio_btn{
+	text-align: center;
+	}
+
+	.contact_text{
+	margin-bottom: 50px;
+	}
+
+	.contact_text p{
+	font-size: 100%;
+	}
+
+	.contact_list a{
+	font-size: 150%;
+	}
+
+	footer p{
+	padding:25px 0;
+	text-align: right;
+	}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
