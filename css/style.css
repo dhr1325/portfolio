@@ -70,6 +70,10 @@ html:not(:target) body{
 	font-size: 30px;
 }
 
+article{
+	overflow: hidden;
+}
+
 .fr{
     float:right;
 }
@@ -235,16 +239,16 @@ html:not(:target) body{
 
 .scroll_down{
   position: absolute;
+  bottom: 20px;
+  left:48%;
+  display: inline-block;
+  padding-top: 70px;
   color:#fff;
   letter-spacing: 1px;
-  z-index: 2;
-  padding-top: 70px;
   font-weight: bold;
-  transform: translate(0, -50%);
+  transform: translateX(0, -50%);
   -webkit-transform: translate(0, -50%);
-  display: inline-block;
-  bottom: 20px;
-  left: 48%;
+  z-index: 2;
 }
 
 .scroll_down span {
@@ -408,10 +412,10 @@ header{
 
 /* メッセージ */
 .message{
+	width: 100%;
 	background: #232830;
 	color:#fff;
 	text-align: center;
-	box-shadow: 0 3px 10px 5px #aaa;
 }
 
 .message_wrap{
@@ -437,10 +441,22 @@ header{
 
 /*アバウト*/
 .about{
+	position: relative;
 	width: 100%;
-	padding:180px 0 90px;
+	padding:120px 0 180px;
 	background: #e4ebee;
-	box-shadow: 0 5px 10px #dedede;
+}
+
+.about::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 60px solid transparent;  /* 透明 */ 
+  border-left: 50vw solid transparent;  /* 透明 */ 
+  border-right: 50vw solid #fff;  /* むらさき */ 
+  border-bottom: 60px solid #fff;  /* むらさき */ 
 }
 
 .about_block{
@@ -490,10 +506,21 @@ header{
 
 /*スキル*/
 .skill{
+	position: relative;
 	width: 100%;
-	padding:90px 0;
-	/* background: #d2bc7d;
-	color:#fff; */
+	padding:60px 0 180px;
+}
+
+.skill::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  bottom: 0;  /* 透明 */ 
+  border-right: 50vw solid transparent;  /* むらさき */ 
+  border-bottom: 60px solid #232830;
+  border-top: 60px solid transparent;
+  border-left: 50vw solid #232830;  /* むらさき */ 
 }
 
 .skill h2{
@@ -564,10 +591,23 @@ header{
 
 /* サービス */
 .service{
+	position: relative;
 	width: 100%;
-	padding:90px 0;
+	padding:60px 0 180px;
 	background: #232830;
 	color:#fff;
+}
+
+.service::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 60px solid transparent;  /* 透明 */ 
+  border-left: 50vw solid transparent;  /* 透明 */ 
+  border-right: 50vw solid #e4ebee;  /* むらさき */ 
+  border-bottom: 60px solid #e4ebee;  /* むらさき */ 
 }
 
 .service h2{
@@ -690,10 +730,22 @@ td{
 
 /* ポートフォリオ */
 .portfolio{
+	position: relative;
 	width: 100%;
-	padding:90px 0;
+	padding:60px 0 180px;
 	background: #e4ebee;
-	box-shadow: 0 5px 10px #dedede;
+}
+
+.portfolio::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  bottom: 0;  /* 透明 */ 
+  border-right: 50vw solid transparent;  /* むらさき */ 
+  border-bottom: 60px solid #fff;
+  border-top: 60px solid transparent;
+  border-left: 50vw solid #fff;  /* むらさき */ 
 }
 
 .portfolio h2{
@@ -704,6 +756,10 @@ td{
 	display: flex;
 	justify-content: space-between;
 	font-size: 120%;
+}
+
+.slider{
+	width: 50%;
 }
 
 .portfolio_text{
