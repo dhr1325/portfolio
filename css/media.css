@@ -138,7 +138,12 @@
 	font-size: 100%;
 	}
 
+	.slider{
+		width: 100%;
+	}
+
 	.portfolio_text p{
+		text-align: center;
 		margin-bottom: 100px;
 	}
 
