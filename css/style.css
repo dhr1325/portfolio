@@ -821,3 +821,104 @@ footer p{
 	padding:50px 0;
 	text-align: right;
 }
+
+/*ワークフロー*/
+.fade{
+	display: none;
+}
+
+.workflow{
+	position: relative;
+	width: 100%;
+	padding:120px 0 150px;
+	background: #232830;
+	color: #fff;
+}
+
+.workflow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  bottom: 0;  /* 透明 */ 
+  border-right: 50vw solid #fff;  /* むらさき */ 
+  border-bottom: 60px solid #fff;
+  border-top: 60px solid transparent;
+  border-left: 50vw solid transparent;  /* むらさき */ 
+}
+
+/* ワークフロー */
+.flowwrap{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.workflow h1{
+	border-bottom: 1px dotted #fff!important;
+}
+
+.keyvisual{
+	width: 100%;
+	margin-bottom: 50px;
+	border:2px solid rgba(255,255,255,0.5);
+}
+
+.flowblock h2{
+	display: inline-block;
+	margin-bottom: 50px;
+	padding: 10px 15px;
+	font-size: 150%;
+	border-left: 10px solid #3aa;
+}
+
+.flowblock ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.flowblock li{
+	width: 32%;
+	margin-bottom: 50px;
+	padding: 30px 10px 70px;
+	font-size: 120%;
+	border:solid 1px rgba(255,255,255,0.5);
+	text-align: center;
+	line-height: 2;
+	box-shadow: 0 0 10px #3aa;
+	transition:all 0.5s;
+}
+
+.flowblock span{
+	display: inline-block;
+	width: 80%;
+	margin-bottom: 50px;
+	padding-bottom: 5px;
+	border-bottom: 4px double #3aa;
+	font-size: 134%;
+}
+
+.f_text{
+	padding:50px 0 120px;  
+	text-align: right;
+}
+
+.f_text p{
+	margin-bottom: 50px;
+	font-size: 120%;
+	line-height: 1.5;
+}
+
+.prev a{
+	display: inline-block;
+	padding:15px 60px;
+	border:3px double #333;
+	color:#333;
+	transition:all 0.5s;
+}
+
+.prev a:hover{
+	background: #000;
+	color: #fff;
+	border:3px double #fff;
+}
